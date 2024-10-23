@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from './App';
 import { HomePage } from './pages/homePage/HomePage';
+import { OauthPage } from './pages/oauthPage/OauthPage';
 
 export const Router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ export const Router = createBrowserRouter([
       {
         path: 'home',
         element: <HomePage />
+      },
+      {
+        path: 'register',
+        element: <OauthPage />
       }
     ]
   }
